@@ -1,0 +1,54 @@
+<!-- Created by lucy njoki -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation</title>
+    <link rel="stylesheet" href="string body.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Palindrome Checker</h1> <!--header-->
+        <p>Enter a string to check if it's a palindrome.</p>
+
+        <form id="palindromeForm">
+            <input type="text" id="inputString" placeholder="Enter a string">
+            <button type="button" id="checkButton">Check</button>
+        </form>
+
+        <p id="resultMessage"></p>
+
+        <button type="button" id="retryButton" style="display: none;">Try Another Word</button>
+    </div>
+
+    <script src="string.js"></script> <!--the java script-->
+</body>
+<title>Secret Message Access</title>
+</head>
+<body>
+    <!--this is the input validation assingmnet-->
+    <h1>Access the Secret Message</h1>
+    <p>Enter your information to access the secret message.</p>
+<!-- the following are the acess form-->
+    <form id="accessForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" id="zipCode" required><br>
+        <!-- access secret message-->
+
+        <button type="button" onclick="validateAndAccessSecretMessage()">Access Secret Message</button>
+    </form>
+<!--Validate zip code format (5 digits)-->
+    <p id="errorMessage" style="color: red;"></p> <!-- Dispaly red if there is an error-->
+
+    <div id="secretMessage" style="display: none;">
+        <h2>Secret Message</h2>
+        <p>This is the secret message you can access.</p>
+    </div>
+    </script>
